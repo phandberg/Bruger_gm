@@ -36,6 +36,10 @@ namespace Bruger_gm
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtlon = new System.Windows.Forms.TextBox();
+            this.AddPoint = new System.Windows.Forms.Button();
+            this.ClearList = new System.Windows.Forms.Button();
+            this.Route = new System.Windows.Forms.Button();
+            this.interessepunkt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // splitter1
@@ -57,7 +61,7 @@ namespace Bruger_gm
             this.map.GrayScaleMode = false;
             this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.map.LevelsKeepInMemory = 5;
-            this.map.Location = new System.Drawing.Point(13, 13);
+            this.map.Location = new System.Drawing.Point(12, 12);
             this.map.MarkersEnabled = true;
             this.map.MaxZoom = 2;
             this.map.MinZoom = 2;
@@ -90,7 +94,7 @@ namespace Bruger_gm
             // txtlat
             // 
             this.txtlat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtlat.Location = new System.Drawing.Point(593, 97);
+            this.txtlat.Location = new System.Drawing.Point(593, 87);
             this.txtlat.Name = "txtlat";
             this.txtlat.Size = new System.Drawing.Size(150, 22);
             this.txtlat.TabIndex = 3;
@@ -98,7 +102,7 @@ namespace Bruger_gm
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(596, 297);
+            this.button1.Location = new System.Drawing.Point(596, 195);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 23);
             this.button1.TabIndex = 4;
@@ -110,7 +114,7 @@ namespace Bruger_gm
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(593, 150);
+            this.label2.Location = new System.Drawing.Point(593, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 17);
             this.label2.TabIndex = 5;
@@ -119,16 +123,61 @@ namespace Bruger_gm
             // txtlon
             // 
             this.txtlon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtlon.Location = new System.Drawing.Point(596, 191);
+            this.txtlon.Location = new System.Drawing.Point(596, 156);
             this.txtlon.Name = "txtlon";
             this.txtlon.Size = new System.Drawing.Size(147, 22);
             this.txtlon.TabIndex = 6;
+            // 
+            // AddPoint
+            // 
+            this.AddPoint.Location = new System.Drawing.Point(595, 287);
+            this.AddPoint.Name = "AddPoint";
+            this.AddPoint.Size = new System.Drawing.Size(115, 29);
+            this.AddPoint.TabIndex = 7;
+            this.AddPoint.Text = "Add point";
+            this.AddPoint.UseVisualStyleBackColor = true;
+            this.AddPoint.Click += new System.EventHandler(this.AddPoint_Click);
+            // 
+            // ClearList
+            // 
+            this.ClearList.Location = new System.Drawing.Point(593, 378);
+            this.ClearList.Name = "ClearList";
+            this.ClearList.Size = new System.Drawing.Size(115, 29);
+            this.ClearList.TabIndex = 8;
+            this.ClearList.Text = "ClearList";
+            this.ClearList.UseVisualStyleBackColor = true;
+            this.ClearList.Click += new System.EventHandler(this.ClearList_Click);
+            // 
+            // Route
+            // 
+            this.Route.Location = new System.Drawing.Point(596, 462);
+            this.Route.Name = "Route";
+            this.Route.Size = new System.Drawing.Size(112, 34);
+            this.Route.TabIndex = 9;
+            this.Route.Text = "Route";
+            this.Route.UseVisualStyleBackColor = true;
+            this.Route.Click += new System.EventHandler(this.Route_Click);
+            // 
+            // interessepunkt
+            // 
+            this.interessepunkt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.interessepunkt.Location = new System.Drawing.Point(593, 529);
+            this.interessepunkt.Name = "interessepunkt";
+            this.interessepunkt.Size = new System.Drawing.Size(115, 37);
+            this.interessepunkt.TabIndex = 10;
+            this.interessepunkt.Text = "Interessepunkt";
+            this.interessepunkt.UseVisualStyleBackColor = true;
+            this.interessepunkt.Click += new System.EventHandler(this.interessepunkt_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 665);
+            this.Controls.Add(this.interessepunkt);
+            this.Controls.Add(this.Route);
+            this.Controls.Add(this.ClearList);
+            this.Controls.Add(this.AddPoint);
             this.Controls.Add(this.txtlon);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
@@ -153,6 +202,10 @@ namespace Bruger_gm
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtlon;
+        private System.Windows.Forms.Button AddPoint;
+        private System.Windows.Forms.Button ClearList;
+        private System.Windows.Forms.Button Route;
+        private System.Windows.Forms.Button interessepunkt;
     }
 }
 
