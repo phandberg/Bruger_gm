@@ -39,7 +39,7 @@ namespace Bruger_gm
             this.AddPoint = new System.Windows.Forms.Button();
             this.ClearList = new System.Windows.Forms.Button();
             this.Route = new System.Windows.Forms.Button();
-            this.interessepunkt = new System.Windows.Forms.Button();
+            this.RouteList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // splitter1
@@ -158,23 +158,22 @@ namespace Bruger_gm
             this.Route.UseVisualStyleBackColor = true;
             this.Route.Click += new System.EventHandler(this.Route_Click);
             // 
-            // interessepunkt
+            // RouteList
             // 
-            this.interessepunkt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.interessepunkt.Location = new System.Drawing.Point(593, 529);
-            this.interessepunkt.Name = "interessepunkt";
-            this.interessepunkt.Size = new System.Drawing.Size(115, 37);
-            this.interessepunkt.TabIndex = 10;
-            this.interessepunkt.Text = "Interessepunkt";
-            this.interessepunkt.UseVisualStyleBackColor = true;
-            this.interessepunkt.Click += new System.EventHandler(this.interessepunkt_Click);
+            this.RouteList.Location = new System.Drawing.Point(596, 544);
+            this.RouteList.Name = "RouteList";
+            this.RouteList.Size = new System.Drawing.Size(147, 47);
+            this.RouteList.TabIndex = 10;
+            this.RouteList.Text = "Rute fra liste";
+            this.RouteList.UseVisualStyleBackColor = true;
+            this.RouteList.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 665);
-            this.Controls.Add(this.interessepunkt);
+            this.Controls.Add(this.RouteList);
             this.Controls.Add(this.Route);
             this.Controls.Add(this.ClearList);
             this.Controls.Add(this.AddPoint);
@@ -205,7 +204,7 @@ namespace Bruger_gm
         private System.Windows.Forms.Button AddPoint;
         private System.Windows.Forms.Button ClearList;
         private System.Windows.Forms.Button Route;
-        private System.Windows.Forms.Button interessepunkt;
+        private System.Windows.Forms.Button RouteList;
     }
 }
 
